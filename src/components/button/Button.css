@@ -1,0 +1,14 @@
+.Button {
+    background-color: transparent;
+    cursor: pointer;
+    min-height: 25px;
+}
+
+@keyframes ButtonAnimation {
+    0% {color: white;}
+    100% {color: var(--foursys-orange);}
+}
+
+.Button:hover {
+    animation: forwards ButtonAnimation 1s;
+}

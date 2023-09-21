@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Page1, PageNotFound } from './pages/Pages'
+import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
+import background_detail_1 from './assets/background_detail_1.png'
+import background_detail_2 from './assets/background_detail_2.png'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div className='App'>
+        <img 
+          className='background_detail_1'
+          src={background_detail_1} 
+          alt='?'/>
+        <Routes>
+            {
+              [
+                {path: '/*', element: <PageNotFound/>},
+                {path: '/page_1', element: <Page1/>}
+              ].map(($0, index) => <Route key={index} path={$0.path} element={$0.element}/>)
+            }
+        </Routes>
+        <img 
+          className='background_detail_2'
+          src={background_detail_2} 
+          alt='?'/>
+      </div>
+    </Router>
+  )
 }
-
-export default App;
