@@ -1,9 +1,15 @@
-.Page1 h2 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 55px;
+.Page1  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.Page1 p {
+    margin-bottom: 1rem;
+    width: 60%;
+    line-height: 25px;
 }
 
-.Page1 .am {
-    color: var(--foursys-orange);   
+.Page1 p a {
+    text-decoration: none;
 }

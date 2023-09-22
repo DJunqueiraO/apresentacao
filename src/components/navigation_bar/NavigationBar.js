@@ -16,9 +16,9 @@ export function NavigationBar() {
           </a>
           {
             [
-                {children: 'QUEM SOU', to: 'page_1', style: {marginLeft: '3.5vw'}}, 
+                {children: 'QUEM SOU', to: 'page_1', style: {marginLeft: '3rem'}}, 
                 {children: 'O QUE EU FAÇO', to: 'page_2'}, 
-                {children: 'CASES', to: 'page_3'}
+                {children: 'DEMO', to: 'page_3'}
             ].map(
                 $0 => (
                     <Button 

@@ -1,0 +1,29 @@
+.table-container {
+    overflow: auto;
+    position: relative;
+}
+
+.table-container * {
+    padding: 0;
+}
+
+.table-container .table {
+    table-layout: fixed;
+    width: 100%;
+    overflow: auto;
+}
+
+.table-container .table .table-header {
+    border-bottom: 1px solid #FF4000;
+}
+
+.table-container .table .table-header * {
+    color: #FF4000
+}
+
+.table-container .table th {
+    text-align: left;
+    position: sticky;
+    top:0;
+    background-color: white;
+}
