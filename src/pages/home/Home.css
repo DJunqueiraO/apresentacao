@@ -1,0 +1,13 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Home p, h1 {
+    text-align: center;
+}
+
+.Home Button {
+    margin-top: 20px;
+}

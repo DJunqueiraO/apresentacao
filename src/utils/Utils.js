@@ -1,0 +1,1 @@
+export {useStateAsObject} from './useStateAsObject/useStateAsObject'

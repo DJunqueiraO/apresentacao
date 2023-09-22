@@ -1,22 +1,4 @@
 .App {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  justify-content: center;
-}
-
-.App .background_detail_1, .background_detail_2 {
-  position: absolute;
-}
-
-.App .background_detail_1 {
-  top: 0;
-  left: 0;
-  height: 30%;
-}
-
-.App .background_detail_2 {
-  right: 0;
-  bottom: 0;
-  height: 65%;
+  width: 100%;
 }

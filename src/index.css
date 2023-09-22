@@ -4,12 +4,16 @@
 }
 
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-family: 'Nunito';
   color: white;
   border: none;
   margin: 0;
   padding: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 html, body, #root {
@@ -22,6 +26,6 @@ html, body, #root {
 }
 
 :root {
-  --foursys-blue: #1C1C38;
+  --foursys-blue: #1D1C36;
   --foursys-orange: #FF4901;
 }

@@ -1,0 +1,17 @@
+.NavigationBar {
+    display: flex;
+    align-items: start;
+    margin-top: 29px;
+    margin-left: 53px;
+    margin-bottom: 61.5px;
+    max-height: 59px;
+}
+  
+.NavigationBar .foursys_logo {
+    width: 156px;
+}
+  
+.NavigationBar .Button {
+    margin-top: 13.1px;
+    margin-left: 1vw;
+}

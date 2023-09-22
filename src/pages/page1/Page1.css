@@ -1,23 +1,9 @@
-.Page1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.Page1 p, h1 {
+.Page1 h2 {
     text-align: center;
+    font-weight: 400;
+    font-size: 55px;
 }
 
-.Page1 Button {
-    margin-top: 20px;
-}
-
-.Page1 .foursys_logo {
-    top: 20px;
-    right: 40%;
-    width: 20%;
-    position: absolute;
-    height: 15%;
-    object-fit: cover;
-    overflow: visible;
+.Page1 .am {
+    color: var(--foursys-orange);   
 }
