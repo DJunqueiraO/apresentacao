@@ -1,11 +1,18 @@
 .NavigationBar {
     display: flex;
     align-items: start;
-    width: 100%;
+    justify-content: space-between;
+    width: 96.1%;
     padding-top: 1.8rem;
-    padding-left: 6.6rem;
+    padding-left: 3.9%;
     padding-bottom: 4rem;
     max-height: 4rem;
+}
+
+.NavigationBar .topics {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
 }
   
 .NavigationBar .foursys_logo {
@@ -15,4 +22,27 @@
 .NavigationBar .Button {
     margin-top: .9rem;
     margin-left: 1rem;
+}
+  
+.NavigationBar .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+}
+  
+.NavigationBar .contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+.NavigationBar .contacts a:hover {
+    color: var(--foursys-orange);
+    animation: forwards FadeIn .5s;
 }

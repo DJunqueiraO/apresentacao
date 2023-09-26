@@ -7,17 +7,6 @@
     text-shadow: .5px .5px 1px white;
 }
 
-@keyframes ButtonAnimation {
-    0% {
-        color: white;
-        text-shadow: .5px .5px 1px white;
-    }
-    100% {
-        color: var(--foursys-orange);
-        text-shadow: none;
-    }
-}
-
 .Button:hover {
-    animation: forwards ButtonAnimation .5s;
+    animation: forwards FadeIn .5s;
 }

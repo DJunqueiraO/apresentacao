@@ -1,0 +1,38 @@
+.Page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Page3 .container {
+    margin-top: 50px;
+    width: 80%;
+}
+
+.Page3 .container .header {
+    display: flex;
+}
+
+.Page3 .container .header p {
+    width: 50%;
+    font-size: 25px;
+}
+
+.Page3 .container .header h2 {
+    text-align: left;
+    width: 50%;
+}
+
+.Page3 .container .desafio {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 3rem;
+    padding-block: 3rem;
+}
+
+.Page3 .container .desafio p {
+    margin-left: 5%;
+    width: 40%;
+    color: var(--foursys-blue);
+    font-size: 20px;
+}

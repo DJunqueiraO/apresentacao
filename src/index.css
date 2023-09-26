@@ -9,6 +9,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 *::-webkit-scrollbar {
@@ -25,11 +26,6 @@ html, body, #root {
   width: 100%;
   background-color: var(--foursys-blue);
   overflow: hidden;
-}
-
-:root {
-  --foursys-blue: #1D1C36;
-  --foursys-orange: #FF4901;
 }
 
 h2 {

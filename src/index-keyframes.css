@@ -1,0 +1,10 @@
+@keyframes FadeIn {
+    0% {
+        color: white;
+        text-shadow: .5px .5px 1px white;
+    }
+    100% {
+        color: var(--foursys-orange);
+        text-shadow: none;
+    }
+}

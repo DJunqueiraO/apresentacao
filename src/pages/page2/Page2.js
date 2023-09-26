@@ -1,14 +1,34 @@
-import { CompetenceCard, Table } from "../../components/Components";
-import { useResize, useStateAsObject } from "../../utils/Utils";
+import { useEffect } from "react"
+import { 
+    CompetenceCard, 
+    Table 
+} from "../../components/Components"
+import { 
+    collections, 
+    firestore, 
+    useResize, 
+    useStateAsObject
+} from "../../utils/Utils"
+// import data from '../../utils/data/Data.json'
 import './Page2.css'
 
 export function Page2() {
     const itemsPerLine = useStateAsObject(4)
+    const items = useStateAsObject([])
     useResize(
         window => {
             console.log(window.width*3/1366)
             itemsPerLine.set(Math.floor(window.width*4/1366))
         }
+    )
+    useEffect(
+        () => {
+            const {documentIds, path} = collections.ido
+            firestore.get(path, documentIds[0])
+                .then(result => items.set(result.tecnologias))
+                .catch(error => console.log(error))
+        },
+        []
     )
     return(
         <div className='Page2'>
@@ -16,47 +36,8 @@ export function Page2() {
             <Table
                 itemsPerLine={itemsPerLine.get()}
                 items={
-                    [
-                        {
-                            title: 'IOS(Mobile)', 
-                            items: [
-                                'ViewCode',
-                                'UIKit',
-                                'SwiftUI',
-                                'MVVM',
-                                'URLSession',
-                                'Xib',
-                                'Alamofire',
-                                'Core Data',
-                                'CocoaPods',
-                                'Firebase',
-                                'MVVM-C',
-                                'SwiftLint'
-                            ]
-                        },
-                        {
-                            title: 'React(Web)', 
-                            items: [
-                                'JSX',
-                                'Composition',
-                                'React Hook',
-                                'ReactRouterDom',
-                                'CSS Modules',
-                                'Class Component'
-                            ]
-                        },
-                        {
-                            title: 'Java(BackEnd, Mobile)', 
-                            items: [
-                                'Android',
-                                'Layout Programático',
-                                'JavaFx',
-                                'Java Swing',
-                                'Spring Boot',
-                                'SOLID'
-                            ]
-                        }
-                    ].map(
+                    items.get().map(
+                    // data.tecnologias.map(
                         $0 => (
                             <CompetenceCard 
                                 items={$0.items}
@@ -64,7 +45,7 @@ export function Page2() {
                         )
                     )
                 }>
-                <div className='TableTitle'><h3>Hard Skills</h3></div>
+                <div className='TableTitle'><h3>Tecnologias</h3></div>
             </Table>
         </div>
     )

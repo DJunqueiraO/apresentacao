@@ -1,0 +1,43 @@
+{
+     "tecnologias": [
+        {
+            "title": "IOS(Mobile)", 
+            "items": [
+                "ViewCode",
+                "UIKit",
+                "SwiftUI",
+                "MVVM",
+                "URLSession",
+                "Xib",
+                "Alamofire",
+                "Core Data",
+                "CocoaPods",
+                "Firebase",
+                "MVVM-C",
+                "SwiftLint"
+            ]
+        },
+        {
+            "title": "React(Web)", 
+            "items": [
+                "JSX",
+                "Composition",
+                "React Hook",
+                "ReactRouterDom",
+                "CSS Modules",
+                "Class Component"
+            ]
+        },
+        {
+            "title": "Java(BackEnd, Mobile)", 
+            "items": [
+                "Android",
+                "Layout Programático",
+                "JavaFx",
+                "Java Swing",
+                "Spring Boot",
+                "SOLID"
+            ]
+        }
+    ]
+}
