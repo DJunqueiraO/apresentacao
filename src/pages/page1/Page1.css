@@ -4,12 +4,22 @@
     align-items: center;
     margin-bottom: 5rem;
 }
+
+.Page1 .container {
+    width: 60%;
+}
+
 .Page1 p {
     margin-bottom: 1rem;
-    width: 60%;
     line-height: 25px;
 }
 
 .Page1 p a {
     text-decoration: none;
+}
+
+.Page1 ul {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
 }

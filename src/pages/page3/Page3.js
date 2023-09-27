@@ -1,35 +1,42 @@
-import { useStateAsObject } from '../../utils/Utils'
+import { useResize, useStateAsObject } from '../../utils/Utils'
 import './Page3.css'
+import data from '../../utils/data/Data.json'
+import { useEffect } from 'react'
 
 export function Page3() {
-    const desafios = useStateAsObject(
-        [
-            <>
-                <p style={{fontWeight: 'bold', color: 'var(--foursys-orange)', fontSize: '25px'}}>
-                    FAZER UMA APRESENTAÇÃO UTILIZANDO O REACT WEB
-                </p>
-                <p style={{marginBlock: '1rem', fontWeight: 'bold'}}>
-                    O DESAFIO
-                </p>
-                <p>
-                    Concluir, de uma só vez, duas demandas para readequação dos 
-                    sistemas internos destinados ao IRPF 2021/2022 em um grande banco brasileiro. 
-                    O desafio estava na execução do projeto que levou em consideração adequações 
-                    no sistema mainframe e na baixa plataforma (codificado em C#) para atualização 
-                    do atual formulário do IRPF e, ao mesmo tempo, superando um grande gap na 
-                    infraestrutura devido a indisponibilidade de ambiente de desenvolvimento.
-                </p>
-            </>,
-            2,
-            3
-        ]
+
+    const desafios = useStateAsObject([])
+    const showingImage = useStateAsObject(true)
+
+    useEffect(
+        () => {
+            desafios.set(data.projetos)
+        },
+        []
     )
+
+    useResize(
+        window => {
+            showingImage.set(window.width > 900)
+        }
+    )
+
+    const desafioOnClickHandler = link => {
+        const a = document.createElement('a')
+        a.href = link
+        a.click()
+    }
+
     return(
         <div className='Page3'>
             <div className='container'>
                 <div className="header">
-                    <h2>CASES DE<br/><span style={{color: 'var(--foursys-orange)'}}>SUCESSO</span></h2>
-                    <p>
+                    {
+                        showingImage.get() && (
+                            <h2>CASES <br/><span style={{color: 'var(--foursys-orange)'}}>PROJETOS</span></h2>
+                        )
+                    }
+                    <p style={showingImage.get()? {width:  '50%'} : {marginBottom:  '2rem'}}>
                         Conheça abaixo como o Daniel implanta, com sucesso, 
                         desafios utilizando inovação e tecnologia em diversos segmentos 
                         de negócio e diferentes setores do mercado.
@@ -37,11 +44,39 @@ export function Page3() {
                 </div>
                 {
                     desafios.get().map(
-                        $0 => (
-                            <div className='desafio'>
-                                {$0}
-                            </div>
-                        )
+                        ($0, index) => {
+                            const width = showingImage.get() ? 50 : 100
+                            return (
+                                <div 
+                                    onClick={() => desafioOnClickHandler($0.link)}
+                                    key={index} 
+                                    className='desafio' 
+                                    style={$0.link? {cursor: 'pointer'} : null}>
+                                    <div style={{display: 'flex'}}>
+                                        <div style={{width: width + '%'}}>
+                                            <p style={{fontWeight: 'bold', color: 'var(--foursys-orange)', fontSize: '25px'}}>
+                                                {$0.tecnology}
+                                            </p>
+                                            <p style={{marginBlock: '1rem', fontWeight: 'bold'}}>
+                                                {$0.name}
+                                            </p>
+                                            <p>
+                                                {$0.description}
+                                            </p>
+                                        </div>
+                                        {
+                                            showingImage.get() && (
+                                                <div 
+                                                    className='text' 
+                                                    style={{display: 'flex', width: width + '%', alignItems: 'center', justifyContent: 'center'}}>
+                                                    <img className={$0.animation} src={$0.src} alt="?" />
+                                                </div>
+                                            )
+                                        }
+                                    </div>
+                                </div>
+                            )
+                        }
                     )
                 }
             </div>

@@ -21,8 +21,9 @@ export function NavigationBar() {
                         {children: 'O QUE EU FAÇO', to: 'page_2'}, 
                         {children: 'CASES', to: 'page_3'}
                     ].map(
-                        $0 => (
+                        ($0, index) => (
                             <Button 
+                                key={index}
                                 style={
                                     {
                                         textDecoration: pathname.includes($0.to)? 'underline' : 'none',

@@ -1,5 +1,5 @@
 {
-     "tecnologias": [
+    "tecnologias": [
         {
             "title": "IOS(Mobile)", 
             "items": [
@@ -38,6 +38,28 @@
                 "Spring Boot",
                 "SOLID"
             ]
+        }
+    ],
+    "projetos": [
+        {
+            "tecnology": "JAVA",
+            "name": "TF_ASSINATURA ROGO MVP-2",
+            "link": "https://docs.google.com/presentation/d/11thXTf41Ww0nOrs_219NClGb6tdhmf-VgFGC3kZMa-0/edit?usp=sharing",
+            "description": "Fazer a implementação Assinatura Rogo para o terminal financeiro. Trata-se de uma validação e trânsito de dados, para que o MainFrame verifique e trate adequadamente aqueles clientes que não são alfabetizados.",
+            "src": "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png"
+        },
+        {
+            "tecnology": "REACT",
+            "animation": "spin",
+            "name": "FAZER UMA APRESENTAÇÃO UTILIZANDO O REACT WEB",
+            "description": "Desenvolver um site espelhado no próprio site da foursys com o intuito de fazer uma demonstração de conhecimento em React Web.O desafio estava na execução do projeto que levou em consideração adequações no sistema firebase para armazenamento e atualização dos dados e, ao mesmo tempo, utilizando Javascript para o desenvolvimento do front-end web.",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+        },
+        {
+            "tecnology": "ELECTRON",
+            "name": "GERADOR DE ADAPTER",
+            "description": "Criar uma aplicação dekstop que seja capaz de transcrever o XML do Book gerado pelo ARQ_PCCF para java com o propósito de reduzir o retrabalho e evitar falha humana na criação do adapter.",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png"
         }
     ]
 }

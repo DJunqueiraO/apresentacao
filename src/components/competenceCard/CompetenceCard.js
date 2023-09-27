@@ -10,7 +10,7 @@ export function CompetenceCard({children, title, items}) {
                 }
                 {
                     items && items.map(
-                        $0 => <p><img src={check} alt="?" />{$0}</p>
+                        ($0, index) => <p key={index}><img src={check} alt="?" />{$0}</p>
                     )
                 }
                 {children}

@@ -9,7 +9,7 @@ import {
     useResize, 
     useStateAsObject
 } from "../../utils/Utils"
-// import data from '../../utils/data/Data.json'
+import data from '../../utils/data/Data.json'
 import './Page2.css'
 
 export function Page2() {
@@ -17,7 +17,6 @@ export function Page2() {
     const items = useStateAsObject([])
     useResize(
         window => {
-            console.log(window.width*3/1366)
             itemsPerLine.set(Math.floor(window.width*4/1366))
         }
     )
@@ -26,7 +25,12 @@ export function Page2() {
             const {documentIds, path} = collections.ido
             firestore.get(path, documentIds[0])
                 .then(result => items.set(result.tecnologias))
-                .catch(error => console.log(error))
+                .catch(
+                    error => {
+                        items.set(data.tecnologias)
+                        console.log(error)
+                    }
+                )
         },
         []
     )
@@ -37,8 +41,7 @@ export function Page2() {
                 itemsPerLine={itemsPerLine.get()}
                 items={
                     items.get().map(
-                    // data.tecnologias.map(
-                        $0 => (
+                        ($0, index) => (
                             <CompetenceCard 
                                 items={$0.items}
                                 title={$0.title}/>

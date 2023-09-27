@@ -14,7 +14,7 @@
     color: var(--foursys-orange);
 }
 
-.Home p {
+.Home p, h2 {
     font-size: 26px;
 }
 
