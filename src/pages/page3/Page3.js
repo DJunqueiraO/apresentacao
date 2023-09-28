@@ -1,16 +1,24 @@
-import { useResize, useStateAsObject } from '../../utils/Utils'
+import { collections, firestore, useResize, useStateAsObject } from '../../utils/Utils'
 import './Page3.css'
 import data from '../../utils/data/Data.json'
 import { useEffect } from 'react'
 
 export function Page3() {
 
-    const desafios = useStateAsObject([])
+    const projects = useStateAsObject([])
     const showingImage = useStateAsObject(true)
 
     useEffect(
         () => {
-            desafios.set(data.projetos)
+            const {documentIds, path} = collections.projects
+            firestore.get(path, documentIds[0])
+                .then(result => projects.set(result.projetos))
+                .catch(
+                    error => {
+                        projects.set(data.projetos)
+                        console.log(error)
+                    }
+                )
         },
         []
     )
@@ -43,7 +51,7 @@ export function Page3() {
                     </p>
                 </div>
                 {
-                    desafios.get().map(
+                    projects.get().map(
                         ($0, index) => {
                             const width = showingImage.get() ? 50 : 100
                             return (
