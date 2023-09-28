@@ -8,9 +8,8 @@ export function Home() {
             <h2>26 anos, Pinheiral/RJ</h2>
             <p>
                 Desenvolvedor Foursys<br/>
-                com agilidade e inovação, por meio do uso da tecnologia
             </p>
-            <Button to='page_2'>➔</Button>
+            <Button to='page_1'>➔</Button>
         </div>
     )
 }

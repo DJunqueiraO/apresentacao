@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.Page2 h2 {
+    font-size: 55px;
+    font-weight: 350;
+    margin-bottom: 3rem;
+}
+
 .Page2 .TableTitle {
     padding-top: .1rem;
     border-top: 1px solid white;

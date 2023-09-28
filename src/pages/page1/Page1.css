@@ -5,6 +5,13 @@
     margin-bottom: 5rem;
 }
 
+.Page1 h2 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 350;
+    margin-bottom: 3rem;
+}
+
 .Page1 .container {
     width: 60%;
 }

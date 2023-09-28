@@ -36,7 +36,7 @@ export function Page3() {
                             <h2>CASES <br/><span style={{color: 'var(--foursys-orange)'}}>PROJETOS</span></h2>
                         )
                     }
-                    <p style={showingImage.get()? {width:  '50%'} : {marginBottom:  '2rem'}}>
+                    <p style={showingImage.get()? {width:  '50%'} : null}>
                         Conheça abaixo como o Daniel implanta, com sucesso, 
                         desafios utilizando inovação e tecnologia em diversos segmentos 
                         de negócio e diferentes setores do mercado.

@@ -4,9 +4,19 @@
     align-items: center;
 }
 
+.Page3 h2 {
+    font-size: 55px;
+    font-weight: 350;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+}
+
+.Page3 .header {
+    margin-bottom: 2rem;
+}
+
 .Page3 .container {
-    margin-top: 50px;
-    width: 80%;
+    width: 89%;
 }
 
 .Page3 .container .header {
