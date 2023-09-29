@@ -23,6 +23,7 @@ export function Page2() {
     useEffect(
         () => {
             const {documentIds, path} = collections.ido
+            // firestore.post(path, documentIds[0], {tecnologias: data.tecnologias})
             firestore.get(path, documentIds[0])
                 .then(result => items.set(result.tecnologias))
                 .catch(

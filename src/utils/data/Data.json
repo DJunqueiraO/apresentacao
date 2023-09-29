@@ -29,7 +29,7 @@
             ]
         },
         {
-            "title": "Java(BackEnd, Mobile)", 
+            "title": "Java(BackEnd, Mobile, Dekstop)", 
             "items": [
                 "Android",
                 "Layout Programático",
@@ -45,7 +45,7 @@
             "tecnology": "JAVA",
             "name": "TF_ASSINATURA ROGO MVP-2",
             "link": "https://docs.google.com/presentation/d/11thXTf41Ww0nOrs_219NClGb6tdhmf-VgFGC3kZMa-0/edit?usp=sharing",
-            "description": "Fazer a implementação Assinatura Rogo para o terminal financeiro. Trata-se de uma validação e trânsito de dados, para que o MainFrame verifique e trate adequadamente aqueles clientes que não são alfabetizados.",
+            "description": "Fazer a implementação Assinatura Rogo para o terminal financeiro. Trata-se de uma validação e trânsito de dados, para que o MainFrame verifique e trate adequadamente aqueles clientes que não são alfabetizados para oferta de produtos.",
             "src": "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png"
         },
         {

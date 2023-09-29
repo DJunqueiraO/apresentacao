@@ -11,6 +11,7 @@ export function Page3() {
     useEffect(
         () => {
             const {documentIds, path} = collections.projects
+            // firestore.post(path, documentIds[0], {projetos: data.projetos})
             firestore.get(path, documentIds[0])
                 .then(result => projects.set(result.projetos))
                 .catch(
