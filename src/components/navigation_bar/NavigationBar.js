@@ -19,7 +19,8 @@ export function NavigationBar() {
                     [
                         {children: 'QUEM SOU', to: 'page_1', style: {marginLeft: '3rem'}}, 
                         {children: 'O QUE EU FAÇO', to: 'page_2'}, 
-                        {children: 'CASES', to: 'page_3'}
+                        {children: 'CASES', to: 'page_3'}, 
+                        {children: 'CARREIRA', to: 'https://www.linkedin.com/in/daniel-junqueira-oliveira-279960163/'}
                     ].map(
                         ($0, index) => (
                             <Button 
@@ -37,7 +38,7 @@ export function NavigationBar() {
                 }
             </div>
             <div className='contacts'>
-                <a href="https://www.linkedin.com/in/daniel-junqueira-61695b261/">
+                <a href="https://www.linkedin.com/in/daniel-junqueira-oliveira-279960163/">
                     in
                 </a>
             </div>
