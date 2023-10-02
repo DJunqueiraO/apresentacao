@@ -31,6 +31,7 @@ export function Page3() {
     )
 
     const desafioOnClickHandler = link => {
+        if(!link || link === undefined || link === 'undefined') return
         const a = document.createElement('a')
         a.href = link
         a.click()
@@ -57,7 +58,7 @@ export function Page3() {
                             const width = showingImage.get() ? 50 : 100
                             return (
                                 <div 
-                                    onClick={() => desafioOnClickHandler($0.link)}
+                                    onClick={() => $0.link && desafioOnClickHandler($0.link)}
                                     key={index} 
                                     className='desafio' 
                                     style={$0.link? {cursor: 'pointer'} : null}>
