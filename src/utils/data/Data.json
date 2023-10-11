@@ -44,7 +44,7 @@
         {
             "tecnology": "JAVA",
             "name": "TF_ASSINATURA ROGO MVP-2",
-            "link": "https://docs.google.com/presentation/d/11thXTf41Ww0nOrs_219NClGb6tdhmf-VgFGC3kZMa-0/present",
+            "link": "https://www.java.com/en/",
             "description": "Fazer a implementação Assinatura Rogo para o terminal financeiro. Trata-se de uma validação e trânsito de dados, para que o MainFrame verifique e trate adequadamente aqueles clientes que não são alfabetizados para oferta de produtos.",
             "src": "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png"
         },
@@ -66,7 +66,7 @@
         {
             "tecnology": "ELECTRON",
             "name": "GERADOR DE ADAPTER",
-            "link": "https://docs.google.com/presentation/d/17d-1dDOt5QVWUBGsw8e-WEHLTEYEqNatPgS_DWvs0h4/present",
+            "link": "https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging",
             "description": "Criar uma aplicação dekstop que seja capaz de transcrever o XML do Book gerado pelo ARQ_PCCF para java com o propósito de reduzir o retrabalho e evitar falha humana na criação do adapter.",
             "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png"
         }
