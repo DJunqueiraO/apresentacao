@@ -15,9 +15,11 @@ import './Page2.css'
 export function Page2() {
     const itemsPerLine = useStateAsObject(4)
     const items = useStateAsObject([])
+    const mobile = useStateAsObject()
     useResize(
         window => {
             itemsPerLine.set(Math.floor(window.width*4/1366))
+            mobile.set(window.width < 600)
         }
     )
     useEffect(
@@ -36,8 +38,12 @@ export function Page2() {
         []
     )
     return(
-        <div className='Page2'>
-            <h2>CONHECIMENTOS <span style={{color: 'var(--foursys-orange)'}}>ADQUIRIDOS</span></h2>
+        <div 
+            className='Page2'>
+            <h2
+                style={mobile.get()? {fontSize:  '40px'} : null}>
+                CONHECIMENTOS <span style={{color: 'var(--foursys-orange)'}}>ADQUIRIDOS</span>
+            </h2>
             <Table
                 itemsPerLine={itemsPerLine.get()}
                 items={

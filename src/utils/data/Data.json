@@ -51,7 +51,7 @@
         {
             "tecnology": "REACT",
             "animation": "spin",
-            "link": "https://react.dev/",
+            "link": "https://www.foursys.com.br/",
             "name": "FAZER UMA APRESENTAÇÃO UTILIZANDO O REACT-WEB",
             "description": "Desenvolver um site espelhado no próprio site da foursys com o intuito de fazer uma demonstração de conhecimento em React Web. O desafio estava na execução do projeto que levou em consideração adequações no sistema firebase para armazenamento e atualização dos dados e, ao mesmo tempo, utilizando Javascript para o desenvolvimento do front-end web.",
             "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"

@@ -1,3 +1,5 @@
+export { Pager } from "./pager/Pager"
+
 export { CompetenceCard } from "./competenceCard/CompetenceCard"
 
 export { NavigationBar } from "./navigation_bar/NavigationBar"
