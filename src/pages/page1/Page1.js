@@ -19,7 +19,7 @@ export function Page1() {
                 nas plataformas web, mobile e dekstop, sempre aberto a novas tecnologias.
             </p>
             <p>
-                Caso queira conferir meu portifólio acesse meu <a href='https://github.com/BatataKente/'><strong>Github</strong></a>.
+                Caso queira conferir meu portifólio acesse meu <a href='https://github.com/DJunqueiraO/'><strong>Github</strong></a>.
             </p>
             <Iframe 
                 style={{width: mobile.get()? '100%' : '60vw', height: '315px'}}
