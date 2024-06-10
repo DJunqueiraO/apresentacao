@@ -1,4 +1,4 @@
-.NavigationBar {
+.Nav {
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -9,22 +9,22 @@
     max-height: 4rem;
 }
 
-.NavigationBar .topics {
+.Nav .topics {
     display: flex;
     align-items: start;
     justify-content: space-between;
 }
   
-.NavigationBar .foursys_logo {
+.Nav .foursys_logo {
     width: 156px;
 }
   
-.NavigationBar .Button {
+.Nav .Button {
     margin-top: .9rem;
     margin-left: 1rem;
 }
   
-.NavigationBar .contacts {
+.Nav .contacts {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,7 @@
     width: 10%;
 }
   
-.NavigationBar .contacts a {
+.Nav .contacts a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@
     font-size: 20px;
 }
   
-.NavigationBar .contacts a:hover {
+.Nav .contacts a:hover {
     color: var(--foursys-orange);
     animation: forwards FadeIn .5s;
 }

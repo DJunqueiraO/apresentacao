@@ -12,7 +12,19 @@ export function Pager(
             <div className='App'>
             <Routes>
                 {
-                    routes.map(($0, index) => <Route key={index} path={$0.path} element={$0.element}/>)
+                    routes
+                        .reduce(
+                            ($0, $1) => {
+                                if($1.element) $0.push($1)
+                                return $0
+                            },
+                            []
+                        )
+                        .map(
+                            ($0, index) => (
+                                <Route key={index} path={$0.href} element={$0.element}/>
+                            )
+                        )
                 }
             </Routes>
             </div>

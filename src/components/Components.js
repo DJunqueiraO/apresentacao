@@ -1,8 +1,10 @@
 export { Pager } from "./pager/Pager"
 
-export { CompetenceCard } from "./competenceCard/CompetenceCard"
+export { Section } from "./section/Section"
 
-export { NavigationBar } from "./navigation_bar/NavigationBar"
+export { SectionCase } from "./section_case/SectionCase"
+
+export { Nav } from "./nav/Nav"
 
 export { Button } from "./button/Button"
 

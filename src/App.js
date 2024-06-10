@@ -1,20 +1,28 @@
 import './App.css'
-import { NavigationBar, Pager } from './components/Components'
-import { Home, Page1, Page2, Page3 } from './pages/Pages'
-import { useResize } from './utils/Utils'
+import { Nav, Pager } from './components/Components'
+import { About, Home, Knowledge, Cases } from './pages/Pages'
 
 export default function App() {
+
+  const routes = [
+    {href: '/*', element: <Home/>}
+  ].concat(
+    [
+      {children: 'QUEM SOU', element: <About/>},
+      {children: 'O QUE EU FAÇO', element: <Knowledge/>},
+      {children: 'CASES', element: <Cases/>}
+    ].map($0 => ({...$0, href: $0.element.type.name.toLowerCase()})),
+  )
+
+  const contacts = [
+    {children: 'CARREIRA', href: 'https://www.linkedin.com/in/daniel-junqueira-oliveira-279960163/'}
+  ]
+
   return (
-    <Pager
-      routes={
-        [
-          {path: '/*', element: <Home/>},
-          {path: '/page_1', element: <Page1/>},
-          {path: '/page_2', element: <Page2/>},
-          {path: '/page_3', element: <Page3/>}
-        ]
-      }>
-      <NavigationBar/>
+    <Pager routes={routes}>
+      <Nav 
+        contacts={contacts}
+        routes={routes}/>
     </Pager>
   )
 }

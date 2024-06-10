@@ -1,10 +1,16 @@
-import './CompetenceCard.css'
+import './Section.css'
 import check from '../../assets/check.png'
 
-export function CompetenceCard({children, title, items}) {
+export function Section(
+    {
+        children, 
+        title, 
+        items
+    }
+) {
     return(
-        <div className='CompetenceCard'>
-            <div className="CompetenceCardContainer">
+        <section className='Section'>
+            <div className='SectionContainer'>
                 {
                     title && <h5>{title}</h5>
                 }
@@ -15,6 +21,6 @@ export function CompetenceCard({children, title, items}) {
                 }
                 {children}
             </div>
-        </div>
+        </section>
     )
 }

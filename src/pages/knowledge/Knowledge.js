@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { 
-    CompetenceCard, 
+    Section, 
     Table 
 } from "../../components/Components"
 import { 
@@ -9,16 +9,16 @@ import {
     useResize, 
     useStateAsObject
 } from "../../utils/Utils"
-import data from '../../utils/data/Data.json'
-import './Page2.css'
+import data from '../../assets/data.json'
+import './Knowledge.css'
 
-export function Page2() {
+export function Knowledge() {
     const itemsPerLine = useStateAsObject(4)
     const items = useStateAsObject([])
     const mobile = useStateAsObject()
     useResize(
         window => {
-            itemsPerLine.set(Math.floor(window.width*4/1366))
+            itemsPerLine.set(Math.floor(window.width*(4.5)/1366))
             mobile.set(window.width < 600)
         }
     )
@@ -35,11 +35,11 @@ export function Page2() {
                     }
                 )
         },
-        []
+        [items]
     )
     return(
         <div 
-            className='Page2'>
+            className='Knowledge'>
             <h2
                 style={mobile.get()? {fontSize:  '40px'} : null}>
                 CONHECIMENTOS <span style={{color: 'var(--foursys-orange)'}}>ADQUIRIDOS</span>
@@ -49,7 +49,7 @@ export function Page2() {
                 items={
                     items.get().map(
                         ($0, index) => (
-                            <CompetenceCard 
+                            <Section 
                                 items={$0.items}
                                 title={$0.title}/>
                         )

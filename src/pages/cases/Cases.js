@@ -1,9 +1,10 @@
 import { collections, firestore, useResize, useStateAsObject } from '../../utils/Utils'
-import './Page3.css'
-import data from '../../utils/data/Data.json'
+import './Cases.css'
+import data from '../../assets/data.json'
 import { useEffect } from 'react'
+import { SectionCase } from '../../components/Components'
 
-export function Page3() {
+export function Cases() {
 
     const projects = useStateAsObject([])
     const showingImage = useStateAsObject(true)
@@ -21,7 +22,7 @@ export function Page3() {
                     }
                 )
         },
-        []
+        [projects]
     )
 
     useResize(
@@ -38,7 +39,7 @@ export function Page3() {
     }
 
     return(
-        <div className='Page3'>
+        <div className='Cases'>
             <div className='container'>
                 <div className="header">
                     {
@@ -57,34 +58,13 @@ export function Page3() {
                         ($0, index) => {
                             const width = showingImage.get() ? 50 : 100
                             return (
-                                <div 
+                                <SectionCase
+                                    key={index}
+                                    width={width}
+                                    nCase={$0}
                                     onClick={() => $0.link && desafioOnClickHandler($0.link)}
-                                    key={index} 
-                                    className='desafio' 
-                                    style={$0.link? {cursor: 'pointer'} : null}>
-                                    <div style={{display: 'flex'}}>
-                                        <div style={{width: width + '%'}}>
-                                            <p style={{fontWeight: 'bold', color: 'var(--foursys-orange)', fontSize: '25px'}}>
-                                                {$0.tecnology}
-                                            </p>
-                                            <p style={{marginBlock: '1rem', fontWeight: 'bold'}}>
-                                                {$0.name}
-                                            </p>
-                                            <p>
-                                                {$0.description}
-                                            </p>
-                                        </div>
-                                        {
-                                            showingImage.get() && (
-                                                <div 
-                                                    className='text' 
-                                                    style={{display: 'flex', width: width + '%', alignItems: 'center', justifyContent: 'center'}}>
-                                                    <img className={$0.animation} src={$0.src} alt="?" />
-                                                </div>
-                                            )
-                                        }
-                                    </div>
-                                </div>
+                                    showingImage={showingImage}
+                                    />
                             )
                         }
                     )

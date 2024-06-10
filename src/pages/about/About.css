@@ -1,31 +1,31 @@
-.Page1  {
+.About  {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
 }
 
-.Page1 h2 {
+.About h2 {
     text-align: center;
     font-size: 55px;
     font-weight: 350;
     margin-bottom: 3rem;
 }
 
-.Page1 .container {
+.About .container {
     width: 60%;
 }
 
-.Page1 p {
+.About p {
     margin-bottom: 1rem;
     line-height: 25px;
 }
 
-.Page1 p a {
+.About p a {
     text-decoration: none;
 }
 
-.Page1 ul {
+.About ul {
     width: 100%;
     margin-bottom: 2rem;
     margin-left: 2rem;

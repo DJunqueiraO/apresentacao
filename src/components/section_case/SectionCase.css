@@ -1,0 +1,29 @@
+.SectionCase {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 3rem;
+  padding-block: 3rem;
+}
+
+.SectionCase p {
+  margin-left: 5%;
+  width: 80%;
+  color: var(--foursys-blue);
+  font-size: 20px;
+}
+
+.SectionCase img {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  overflow: visible;
+}
+
+.SectionCase .spin {
+  animation: spin infinite 20s linear;
+}
+
+.SectionCase .small {
+  width: 10em;
+}

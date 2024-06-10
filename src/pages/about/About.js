@@ -1,14 +1,14 @@
 import { Iframe } from '../../components/Components'
 import { useResize, useStateAsObject } from '../../utils/Utils'
-import './Page1.css'
+import './About.css'
 
-export function Page1() {
+export function About() {
     const mobile = useStateAsObject()
     useResize(
         window => mobile.set(window.width < 600)
     )
     return(
-        <div className='Page1'>
+        <div className='About'>
             <div className='container' style={mobile.get()? {width: '90%'} : null}>
             <h2>QUEM <span style={{color: 'var(--foursys-orange)'}}>SOU</span></h2>
             <p>

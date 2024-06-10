@@ -1,24 +1,24 @@
-.Page2 {
+.Knowledge {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Page2 h2 {
+.Knowledge h2 {
     text-align: center;
     font-size: 55px;
     font-weight: 350;
     margin-bottom: 3rem;
 }
 
-.Page2 .TableTitle {
+.Knowledge .TableTitle {
     padding-top: .1rem;
     border-top: 1px solid white;
     text-align: center;
     font-size: 25px;
 }
 
-.Page2 .TableTitle h3 {
+.Knowledge .TableTitle h3 {
     font-weight: normal;
     margin-top: 1rem;
     margin-bottom: 2rem;

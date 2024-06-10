@@ -5,15 +5,14 @@ export function Button(
         style, 
         children, 
         onClick, 
-        to
+        href
     }
 ) {
     const onClickHandler = event => {
         if(onClick) onClick(event)
-        console.log(to)
-        if(to) {
+        if(href) {
             const link = document.createElement('a')
-            link.href = to
+            link.href = href
             link.click()
         }
     }
