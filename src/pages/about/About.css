@@ -1,0 +1,32 @@
+.About  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.About h2 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 350;
+    margin-bottom: 3rem;
+}
+
+.About .container {
+    width: 60%;
+}
+
+.About p {
+    margin-bottom: 1rem;
+    line-height: 25px;
+}
+
+.About p a {
+    text-decoration: none;
+}
+
+.About ul {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}

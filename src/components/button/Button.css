@@ -1,0 +1,12 @@
+.Button {
+    background-color: transparent;
+    cursor: pointer;
+    min-height: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px white;
+}
+
+.Button:hover {
+    animation: forwards FadeIn .5s;
+}
