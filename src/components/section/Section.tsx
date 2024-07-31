@@ -19,9 +19,12 @@ export function Section(props: SectionProps) {
                     props.items && props.items.map(
                         ($0, index) => (
                             <p key={index}>
-                                <img 
+                                <span>
+                                    &#x2713;&nbsp;
+                                </span>
+                                {/* <img 
                                     src={`data:image/png;base64,${images.check}`} 
-                                    alt="?" />
+                                    alt="?" /> */}
                                 {$0}
                             </p>
                         )

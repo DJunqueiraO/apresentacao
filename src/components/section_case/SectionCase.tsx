@@ -18,15 +18,14 @@ export function SectionCase(props: SectionCaseProps) {
         style={props.n_case.link? {cursor: 'pointer'} : {}}>
         <div style={{display: 'flex'}}>
             <div style={{width: props.width + '%'}}>
-                <p style={{fontWeight: 'bold', color: 'var(--background)', fontSize: '25px'}}>
-                    {props.n_case.tecnology}
-                </p>
-                <p style={{marginBlock: '1rem', fontWeight: 'bold'}}>
-                    {props.n_case.name}
-                </p>
-                <p>
-                    {props.n_case.description}
-                </p>
+                <p 
+                    dangerouslySetInnerHTML={{__html: props.n_case.tecnology}}
+                    style={{fontWeight: 'bold', color: 'var(--background)', fontSize: '25px'}}/>
+                <p 
+                    dangerouslySetInnerHTML={{__html: props.n_case.name}}
+                    style={{marginBlock: '1rem', fontWeight: 'bold'}}/>
+                <p
+                    dangerouslySetInnerHTML={{__html: props.n_case.description}}/>
             </div>
             {
                 props.showing_image.get() && (

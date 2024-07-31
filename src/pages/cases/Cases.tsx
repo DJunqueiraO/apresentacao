@@ -1,4 +1,9 @@
-import { collections, firestore, useResize, useStateAsObject } from '../../utils/Utils'
+import { 
+    collections, 
+    firestore, 
+    useResize, 
+    useStateAsObject
+} from '../../utils/Utils'
 import './Cases.css'
 import data from '../../assets/data.json'
 import { useEffect } from 'react'
@@ -51,9 +56,9 @@ export function Cases() {
                         )
                     }
                     <p style={showingImage.get()? {width:  '50%'} : {}}>
-                        Conheça abaixo como o Daniel implanta, com sucesso, 
-                        desafios utilizando inovação e tecnologia em diversos segmentos 
-                        de negócio e diferentes setores do mercado.
+                        Conhe&ccedil;a abaixo como o Daniel implanta, com sucesso, 
+                        desafios utilizando inova&ccedil;&atilde;o e tecnologia em diversos segmentos 
+                        de neg&oacute;cio e diferentes setores do mercado.
                     </p>
                 </div>
                 {

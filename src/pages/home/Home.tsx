@@ -8,7 +8,7 @@ export function Home() {
             <p>
                 Desenvolvedor<br/>
             </p>
-            <Button href='page_1'>➔</Button>
+            <Button href='page_1'>&rArr;</Button>
         </div>
     )
 }

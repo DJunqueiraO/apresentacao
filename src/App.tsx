@@ -9,7 +9,7 @@ export function App() {
   ].concat(
     [
       {children: 'QUEM SOU', element: <About/>},
-      {children: 'O QUE EU FAÇO', element: <Knowledge/>},
+      {children: 'O QUE EU FA&Ccedil;O', element: <Knowledge/>},
       {children: 'CASES', element: <Cases/>}
     ].map($0 => ({...$0, path: $0.element.type.name.toLowerCase()})),
   )

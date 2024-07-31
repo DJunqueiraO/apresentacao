@@ -57,36 +57,36 @@
             "name": "PIANO APP",
             "className": "small",
             "link": "https://www.pianoweb-aa440.web",
-            "description": "Uma aplicação web que permite tocar piano utilizando o teclado do computador. O site foi desenvolvido com o objetivo de mostrar os conhecimentos de React.",
+            "description": "Uma aplica&ccedil;&atilde;o web que permite tocar piano utilizando o teclado do computador. O site foi desenvolvido com o objetivo de mostrar os conhecimentos de React.",
             "src": "https://static-00.iconduck.com/assets.00/piano-icon-512x512-mm2ol6x3.png"
         },
         {
             "tecnology": "REACT",
             "className": "spin",
             "link": "https://react.dev/",
-            "name": "APRESENTAÇÃO UTILIZANDO O REACT-WEB",
-            "description": "Desenvolver um site espelhado no próprio site da foursys com o intuito de fazer uma demonstração de conhecimento em React Web. O desafio estava na execução do projeto que levou em consideração adequações no sistema firebase para armazenamento e atualização dos dados e, ao mesmo tempo, utilizando Javascript para o desenvolvimento do front-end web.",
+            "name": "APRESENTA&Ccedil;&Atilde;O UTILIZANDO O REACT-WEB",
+            "description": "Desenvolver um site espelhado no pr&oacute;prio site da foursys com o intuito de fazer uma demonstra&ccedil;&atilde;o de conhecimento em React Web. O desafio estava na execu&ccedil;&atilde;o do projeto que levou em considera&ccedil;&atilde;o adequa&ccedil;&otilde;es no sistema firebase para armazenamento e atualiza&ccedil;&atilde;o dos dados e, ao mesmo tempo, utilizando Javascript para o desenvolvimento do front-end web.",
             "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
         },
         {
             "tecnology": "FIREBASE",
-            "name": "BACKEND(FIRESTORE) PARA APRESENTAÇÃO",
+            "name": "BACKEND(FIRESTORE) PARA APRESENT&Ccedil;&Atilde;O",
             "link": "https://firebase.google.com/?hl=pt",
-            "description": "Utilizar o firebase para compor uma a base de dados para a APRESENTAÇÃO REACT. O Firebase é uma plataforma de desenvolvimento de aplicativos que fornece diversos serviços, dentre eles o firestore para armazenamento e hosting para web sites.",
+            "description": "Utilizar o firebase para compor uma a base de dados para a APRESENTA&Ccedil;&Atilde;O REACT. O Firebase &eacute; uma plataforma de desenvolvimento de aplicativos que fornece diversos servi&ccedil;os, dentre eles o firestore para armazenamento e hosting para web sites.",
             "src": "data:image/png;base64,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"
         },
         {
             "tecnology": "JAVA",
             "name": "TF_ASSINATURA ROGO MVP-2",
             "link": "https://www.java.com/en/",
-            "description": "Fazer a implementação Assinatura Rogo para o terminal financeiro. Trata-se de uma validação e trânsito de dados, para que o MainFrame verifique e trate adequadamente aqueles clientes que não são alfabetizados para oferta de produtos.",
+            "description": "Fazer a implementa&ccedil;&atilde;o Assinatura Rogo para o terminal financeiro. Trata-se de uma valida&ccedil;&atilde;o e tr&acirc;nsito de dados, para que o MainFrame verifique e trate adequadamente aqueles clientes que n&atilde;o s&atilde;o alfabetizados para oferta de produtos.",
             "src": "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png"
         },
         {
             "tecnology": "ELECTRON",
             "name": "GERADOR DE ADAPTER",
             "link": "https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging",
-            "description": "Criar uma aplicação dekstop que seja capaz de transcrever o XML do Book gerado pelo ARQ_PCCF para java com o propósito de reduzir o retrabalho e evitar falha humana na criação do adapter.",
+            "description": "Criar uma aplica&ccedil;&atilde;o dekstop que seja capaz de transcrever o XML do Book gerado pelo ARQ_PCCF para java com o prop&oacute;sito de reduzir o retrabalho e evitar falha humana na cria&ccedil;&atilde;o do adapter.",
             "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png"
         }
     ]

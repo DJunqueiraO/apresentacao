@@ -7,7 +7,6 @@ import { useResize, useStateAsObject } from '../../utils/Utils'
 import { HTMLAttributes } from 'react'
 
 type NavProps = HTMLAttributes<HTMLDivElement> & {
-    home?: string,
     routes: RouteProps[],
     contacts: RouteProps[]
 }
@@ -28,7 +27,7 @@ export function Nav(props: NavProps) {
                 {
                     mobile.get() && (
                         <a 
-                            href={props.home}>
+                            href='/'>
                             <img 
                                 width='156px'
                                 className='foursys_logo'
@@ -52,6 +51,7 @@ export function Nav(props: NavProps) {
                         .map(
                             ($0, index) => (
                                 <Button 
+                                    dangerouslySetInnerHTML={{__html: `${$0.children}`}}
                                     key={index}
                                     style={
                                         {
@@ -59,8 +59,7 @@ export function Nav(props: NavProps) {
                                             // ...$0.style
                                         }
                                     } 
-                                    href={$0.path} 
-                                    children={$0.children}/>
+                                    href={$0.path} />
                             )
                         )
                 }
