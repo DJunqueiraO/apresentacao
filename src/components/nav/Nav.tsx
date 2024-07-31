@@ -27,11 +27,12 @@ export function Nav(props: NavProps) {
                 {
                     mobile.get() && (
                         <a 
+                            className='logo-link'
                             href='/'>
                             <img 
                                 width='156px'
-                                className='foursys_logo'
-                                src={`data:image/png;base64,${images.foursys_logo}`} 
+                                className='logo'
+                                src={`data:image/png;base64,${images.d}`} 
                                 alt='?'/>
                         </a>
                     )
