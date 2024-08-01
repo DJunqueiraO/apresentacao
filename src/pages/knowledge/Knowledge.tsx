@@ -27,21 +27,24 @@ export function Knowledge() {
         }
     )
 
-    useEffect(
-        () => {
-            const {documentIds, path} = collections.ido
-            // firestore.post(path, documentIds[0], {tecnologias: data.tecnologias})
-            firestore.get(path, documentIds[0])
-                .then(result => items.set(result?.tecnologias))
-                .catch(
-                    error => {
-                        items.set(data?.tecnologias)
-                        console.log(error)
-                    }
-                )
-        },
-        [items]
-    )
+    const refresh = () => {
+        if(items.get().length !== 0) {
+            return
+        }
+        const {documentIds, path} = collections.ido
+        // firestore.post(path, documentIds[0], {tecnologias: data.tecnologias})
+        firestore.get(path, documentIds[0])
+            .then(result => items.set(result?.tecnologias))
+            .catch(
+                error => {
+                    items.set(data?.tecnologias)
+                    console.log(error)
+                }
+            )
+    }
+
+    useEffect(refresh, [items])
+
     return(
         <div 
             className='Knowledge'>

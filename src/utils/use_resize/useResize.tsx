@@ -1,8 +1,7 @@
 import {useEffect} from 'react'
 
 export const useResize = (
-    effect: (window: Window) => void,
-    deps: React.DependencyList = []
+    effect: (window: Window) => void
 ) => {
     useEffect(
         () => {
@@ -13,6 +12,6 @@ export const useResize = (
             window.addEventListener('resize', handleResize)
             return () => window.removeEventListener('resize', handleResize)
         }, 
-        deps
+        [effect]
     )
 }

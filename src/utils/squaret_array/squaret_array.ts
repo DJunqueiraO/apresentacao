@@ -1,3 +1,5 @@
+import { UseStateObject } from "../Utils"
+
 export const squaret_array = <T>(array: Array<T>, n: number) => {
 
   const result: T[][] = []
