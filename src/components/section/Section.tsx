@@ -1,5 +1,4 @@
 import './Section.css'
-import images from '../../assets/images.json'
 import { HTMLAttributes } from 'react'
 
 type SectionProps = HTMLAttributes<HTMLDivElement> & {
@@ -22,9 +21,6 @@ export function Section(props: SectionProps) {
                                 <span>
                                     &#x2713;&nbsp;
                                 </span>
-                                {/* <img 
-                                    src={`data:image/png;base64,${images.check}`} 
-                                    alt="?" /> */}
                                 {$0}
                             </p>
                         )

@@ -1,10 +1,10 @@
 import { RouteProps, useLocation } from 'react-router-dom'
-import images from '../../assets/images.json'
 
 import { Button } from '../Components'
 import './Nav.css'
 import { useResize, useStateAsObject } from '../../utils/Utils'
 import { HTMLAttributes } from 'react'
+import { images } from '../../assets/Assets'
 
 type NavProps = HTMLAttributes<HTMLDivElement> & {
     routes: RouteProps[],
@@ -57,7 +57,6 @@ export function Nav(props: NavProps) {
                                     style={
                                         {
                                             textDecoration: pathname.includes($0.path || '')? 'underline' : 'none',
-                                            // ...$0.style
                                         }
                                     } 
                                     href={$0.path} />

@@ -10,9 +10,9 @@ import {
     useResize, 
     useStateAsObject
 } from "../../utils/Utils"
-import data from '../../assets/data.json'
 import './Knowledge.css'
 import { Tecnology } from "../../models/Models"
+import { data } from "../../assets/Assets"
 
 export function Knowledge() {
 

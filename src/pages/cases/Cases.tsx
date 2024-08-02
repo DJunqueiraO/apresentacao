@@ -5,10 +5,10 @@ import {
     useStateAsObject
 } from '../../utils/Utils'
 import './Cases.css'
-import data from '../../assets/data.json'
 import { useEffect } from 'react'
 import { SectionCase } from '../../components/Components'
 import { Project } from '../../models/Models'
+import { data } from '../../assets/Assets'
 
 export function Cases() {
 
