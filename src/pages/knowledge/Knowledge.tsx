@@ -32,7 +32,7 @@ export function Knowledge() {
             return
         }
         const {documentIds, path} = collections.ido
-        // firestore.post(path, documentIds[0], {tecnologias: data.tecnologias})
+        firestore.post(path, documentIds[0], {tecnologias: data.tecnologias})
         firestore.get(path, documentIds[0])
             .then(result => items.set(result?.tecnologias))
             .catch(
@@ -43,7 +43,7 @@ export function Knowledge() {
             )
     }
 
-    useEffect(refresh, [items])
+    useEffect(refresh, [])
 
     return(
         <div 

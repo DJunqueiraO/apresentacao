@@ -18,17 +18,21 @@ export function Cases() {
     useEffect(
         () => {
             const {documentIds, path} = collections.projects
-            // firestore.post(path, documentIds[0], {projetos: data.projetos})
+            firestore.post(path, documentIds[0], {projects: data.projects})
             firestore.get(path, documentIds[0])
-                .then(result => projects.set(result?.projetos))
+                .then(
+                    result => {
+                        projects.set(result?.projects)
+                    }
+                )
                 .catch(
                     error => {
-                        projects.set(data.projetos)
+                        projects.set(data.projects)
                         console.log(error)
                     }
                 )
         },
-        [projects]
+        []
     )
 
     useResize(

@@ -1,7 +1,7 @@
 {
     "tecnologias": [
         {
-            "title": "Swift(IOS)", 
+            "title": "Swift(IOS)",
             "items": [
                 "ViewCode",
                 "UIKit",
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "title": "Python", 
+            "title": "Python",
             "items": [
                 "Web Scrapping",
                 "Beautiful Soup",
@@ -29,7 +29,7 @@
             ]
         },
         {
-            "title": "Javascript/Html/CSS", 
+            "title": "Javascript/Html/CSS",
             "items": [
                 "JSX",
                 "Composition",
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "title": "Java(BackEnd, Mobile, Dekstop)", 
+            "title": "Java(BackEnd, Mobile, Dekstop)",
             "items": [
                 "Android",
                 "Layout Programático",
@@ -51,12 +51,12 @@
             ]
         }
     ],
-    "projetos": [
+    "projects": [
         {
             "tecnology": "REACT",
             "name": "PIANO APP",
             "className": "small",
-            "link": "https://www.pianoweb-aa440.web",
+            "link": "https://pianoweb-aa440.web.app/",
             "description": "Uma aplica&ccedil;&atilde;o web que permite tocar piano utilizando o teclado do computador. O site foi desenvolvido com o objetivo de mostrar os conhecimentos de React.",
             "src": "https://static-00.iconduck.com/assets.00/piano-icon-512x512-mm2ol6x3.png"
         },
