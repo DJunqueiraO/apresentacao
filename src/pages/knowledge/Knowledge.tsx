@@ -30,9 +30,15 @@ export function Knowledge() {
     useEffect(
         () => {
             const {documentIds, path} = collections.ido
-            // firestore.post(path, documentIds[0], {tecnologias: data.tecnologias})
+            firestore.post(path, documentIds[0], {tecnologias: data.tecnologias})
             firestore.get(path, documentIds[0])
-                .then(result => items.set(result?.tecnologias))
+                .then(result => {
+                    items.set(result?.tecnologias)
+                    if(data?.tecnologias?.length !== result?.tecnologias?.length) {
+                        items.set(data?.tecnologias)
+                        firestore.post(path, documentIds[0], {tecnologias: data.tecnologias})
+                    }
+                })
                 .catch(
                     error => {
                         items.set(data?.tecnologias)
@@ -40,8 +46,10 @@ export function Knowledge() {
                     }
                 )
         },
-        [items]
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        []
     )
+    
     return(
         <div 
             className='Knowledge'>

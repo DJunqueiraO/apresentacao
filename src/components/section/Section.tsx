@@ -1,5 +1,4 @@
 import './Section.css'
-import images from '../../assets/images.json'
 import { HTMLAttributes } from 'react'
 
 type SectionProps = HTMLAttributes<HTMLDivElement> & {

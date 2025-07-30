@@ -29,9 +29,11 @@
             ]
         },
         {
-            "title": "Javascript/Html/CSS", 
+            "title": "Javascript(BackEnd, Web)", 
             "items": [
                 "JSX",
+                "Typescript",
+                "Html/CSS",
                 "Composition",
                 "React Hook",
                 "ReactRouterDom",
@@ -53,12 +55,19 @@
     ],
     "projetos": [
         {
+            "tecnology": "JAVA",
+            "name": "NetEmpresa",
+            "link": "http://bradesco.com.br/",
+            "description": "Aplica&ccedil;&atilde;o web em java legado, para operações financeiras CDB.",
+            "src": "https://bradescobank.com/wp-content/uploads/2024/05/bradesco_bank_black-1.svg"
+        },
+        {
             "tecnology": "REACT",
             "name": "PIANO APP",
             "className": "small",
-            "link": "https://www.pianoweb-aa440.web",
+            "link": "https://pianoweb-aa440.web.app/",
             "description": "Uma aplica&ccedil;&atilde;o web que permite tocar piano utilizando o teclado do computador. O site foi desenvolvido com o objetivo de mostrar os conhecimentos de React.",
-            "src": "https://static-00.iconduck.com/assets.00/piano-icon-512x512-mm2ol6x3.png"
+            "src": "piano.png"
         },
         {
             "tecnology": "REACT",

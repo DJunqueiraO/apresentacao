@@ -18,17 +18,25 @@ export function Cases() {
     useEffect(
         () => {
             const {documentIds, path} = collections.projects
-            // firestore.post(path, documentIds[0], {projetos: data.projetos})
+            firestore.post(path, documentIds[0], {projetos: data.projetos})
             firestore.get(path, documentIds[0])
-                .then(result => projects.set(result?.projetos))
+                .then(result => {
+                    projects.set(result?.projetos)
+                    if(data?.projetos?.length !== result?.projetos?.length) {
+                        projects.set(data.projetos)
+                        firestore.post(path, documentIds[0], {projetos: data.projetos})
+                    }
+                })
                 .catch(
                     error => {
                         projects.set(data.projetos)
                         console.log(error)
                     }
                 )
+            console.log('teste');
         },
-        [projects]
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        []
     )
 
     useResize(
