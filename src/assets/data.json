@@ -1,55 +1,34 @@
 {
     "tecnologias": [
         {
-            "title": "Swift(IOS)", 
+            "title": "Java(BackEnd, Mobile, Dekstop)", 
             "items": [
-                "ViewCode",
-                "UIKit",
-                "SwiftUI",
-                "MVVM",
-                "URLSession",
-                "Xib",
-                "Alamofire",
-                "Core Data",
-                "CocoaPods",
-                "Firebase",
-                "MVVM-C",
-                "SwiftLint"
+                "Android",
+                "Desktop(JavaFx)",
+                "Desktop(Swing)",
+                "Spring Boot BackEnd"
+            ]
+        },
+        {
+            "title": "Javascript(BackEnd, Web)", 
+            "items": [
+                "Nodejs BackEnd",
+                "React Web"
             ]
         },
         {
             "title": "Python", 
             "items": [
                 "Web Scrapping",
-                "Beautiful Soup",
-                "Flask",
-                "Flet",
-                "Kivy",
-                "Tkinter"
+                "Flet Mobile/Desktop",
+                "Desktop(Tkinter)",
+                "BackEnd(Flask)"
             ]
         },
         {
-            "title": "Javascript(BackEnd, Web)", 
+            "title": "Swift(IOS)", 
             "items": [
-                "JSX",
-                "Typescript",
-                "Html/CSS",
-                "Composition",
-                "React Hook",
-                "ReactRouterDom",
-                "CSS Modules",
-                "Class Component"
-            ]
-        },
-        {
-            "title": "Java(BackEnd, Mobile, Dekstop)", 
-            "items": [
-                "Android",
-                "Layout Programático",
-                "JavaFx",
-                "Java Swing",
-                "Spring Boot",
-                "SOLID"
+                "Mobile"
             ]
         }
     ],
